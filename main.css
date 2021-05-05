@@ -31,5 +31,10 @@ body {
 
 .col-sm-6{
   background-color: gray;
+  color: white;
+}
 
+form {
+  color: white;
+  background-color: #263d36;
 }
