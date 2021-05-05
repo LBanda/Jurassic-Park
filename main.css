@@ -5,6 +5,7 @@ body {
     max-width: 50em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: #555;
+    background-image: url(https://cdn.europosters.eu/image/750webp/57759.webp);
   }
 
   h2 {
@@ -20,7 +21,6 @@ body {
 
   header {
     background-color: #263d36;
-    background-image: url("header.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,3 +29,7 @@ body {
     text-align: center;
   }
 
+.col-sm-6{
+  background-color: gray;
+
+}
