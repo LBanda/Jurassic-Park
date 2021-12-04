@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
+  <div class="container-fluid">
+      <a class="navbar-name" href="/parque/incidentes">
+          Parque Jurasico
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <% if( isLoggedIn ) { %>
+                  <li> Hola <%= username %> </li>
+                  <li> <a href="/parque/addincidente"> Registrar incidente </a> </li>
+                  <li> <a href="/users/logout"> Cerrar sesión </a> </li>
+              <% } else { %>
+                  <li><a href="/users/login">Iniciar sesión</a></li>
+              <% } %>
+          </ul>
+      </div>
+  </div>
+</nav>
+</header>

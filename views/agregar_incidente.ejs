@@ -1,0 +1,38 @@
+<%- include('includes/header.ejs') %>
+<%- include('includes/nav.ejs') %>
+<div class="container">
+<h1><%= titulo %></h1>
+<div class="input-field col s12">
+    <form action="/parque/addincidente" method="POST"></form>
+
+        <label for="lugar">Lugar del Parque</label><br>
+        <select name="lugar" id="lugar" required>
+            <option value="" disabled selected>Lugar</option>
+            <option value="1">Centro turístico</option>
+            <option value="2">Laboratorios</option>
+            <option value="3">Restaurante</option>
+            <option value="4">Centro operativo</option>
+            <option value="5">Triceratops</option>
+            <option value="6">Dilofosaurios</option>
+            <option value="7">Velociraptors</option>
+            <option value="8">TRex</option>
+            <option value="9">Planicie de los herbívoros</option>
+        </select>
+        <br>
+    
+        <label for="tipo">Tipo de Incidente</label><br>
+        <select name="tipo" id="tipo" required>
+            <option value="" disabled selected>Tipo</option>
+            <option value="1">Falla eléctrica</option>
+            <option value="2">Fuga de herbívoro</option>
+            <option value="3">Fuga de Velociraptors</option>
+            <option value="4">Fuga de TRex</option>
+            <option value="5">Robo de ADN</option>
+            <option value="6">Auto descompuesto</option>
+            <option value="7">Visitantes en zona no autorizada</option>
+        </select>
+        
+        <br>
+        <input type="submit" name="enviar" value="incidencia" class="btn">
+    </form>
+<%- include('includes/footer.ejs') %> 
